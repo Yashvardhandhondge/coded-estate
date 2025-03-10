@@ -6,12 +6,13 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import Landingpage from '@/components/Landingpage';
 
 export default function HomeScreen() {
   return (
     <SafeAreaProvider>
       <Navbar /> 
-      
+      <Landingpage/>
     </SafeAreaProvider>
   );
 }
