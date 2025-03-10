@@ -7,12 +7,14 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import Landingpage from '@/components/Landingpage';
+import TravelCard from '@/components/TravelCard';
 
 export default function HomeScreen() {
   return (
     <SafeAreaProvider>
       <Navbar /> 
       <Landingpage/>
+      <TravelCard/>
     </SafeAreaProvider>
   );
 }

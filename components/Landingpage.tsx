@@ -1,14 +1,16 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
 import AnimatedText from './AnimatedText';
+import TravelCard from './TravelCard';
 
 const Landingpage = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>
-        Travel With Crypto and Save Money
-      </Text>
-      <AnimatedText />
+      <View style={styles.titleContainer}>
+        {/* <Text style={styles.title}>Travel With</Text> */}
+        <AnimatedText />
+        
+      </View>
     </View>
   );
 };
@@ -17,13 +19,17 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 16,
+    padding: 24,
+  },
+  titleContainer: {
+    alignItems: 'center',
+    paddingVertical: 24,
+    width: '100%',
   },
   title: {
-    fontSize: 24,
+    fontSize: 38,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 20,
   },
 });
 
